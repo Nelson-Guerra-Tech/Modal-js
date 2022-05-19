@@ -1,22 +1,16 @@
-// select modal-btn,modal-overlay,close-btn
-const modalBtn = document.querySelector(".modal-btn");
-// console.log(modalBtn)
+// selecting modal btn
+const openModalBtn = document.querySelector(".modal-btn");
+
+// selecting the elements to add functionality
 const modalOverlay = document.querySelector(".modal-overlay");
+// selecting close btn
 const closeBtn = document.querySelector(".close-btn");
 
-// listen for click events on modal-btn and close-btn
-// when user clicks modal-btn add .open-modal to modal-overlay
-modalBtn.addEventListener("click", function () {
-  if (modalOverlay.classList.contains("open-modal")) {
-    modalOverlay.classList.remove("open-modal");
-  } else {
-    modalOverlay.classList.add("open-modal");
-  }
+// event listeners
+openModalBtn.addEventListener("click", () => {
+  modalOverlay.classList.add("open-modal");
 });
 
-// when user clicks close-btn remove .open-modal from modal-overlay
-closeBtn.addEventListener("click", function () {
-  if (modalOverlay.classList.contains("open-modal")) {
-    modalOverlay.classList.remove("open-modal");
-  }
+closeBtn.addEventListener("click", () => {
+  modalOverlay.classList.remove("open-modal");
 });

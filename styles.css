@@ -183,12 +183,15 @@ Modal
 */
 .hero {
   min-height: 100vh;
-  background: url("./hero.jpeg") center/cover no-repeat;
+  background: url("https://images.unsplash.com/photo-1476820865390-c52aeebb9891?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470")
+    center/cover no-repeat;
   display: grid;
   place-items: center;
 }
 .banner {
-  background: var(--clr-white);
+  background: transparent;
+  backdrop-filter: blur(8px);
+  border: solid 1px var(--clr-black);
   padding: 4rem 0;
   border-radius: var(--radius);
   box-shadow: var(--light-shadow);
